@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Registration Form</h1>
+    </header>
+ 
+    <!--Inside main all form elements-->
+    <main>
+        <form>
+            <h2>Create Account</h2>
+            <p>Please fill in the details below</p>
+            <label for="name">Enter the Username:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br>   <!--name=Meenu-->
+
+            <label for="mail">Enter the Email :</label>
+            <input type="email" id="mail" name="mail" placeholder="Enter your email" required><br>
+
+            <label for="pass">Enter the Password:</label>
+            <input type="password" id="pass" name="pass" required><br>
+            
+            <label for="date">Date of Birth:</label>
+            <input type="date" id="date" name="dob"><br>
+            
+            <label for="num">Enter the Phone number:</label>
+            <input type="tel" id="num" name="number" required><br>
+
+            <!--for both check and radio-->
+            <!-- id must me unique-->
+            <!--write each label for each input>-->
+            <!--don't write one label for both input-->
+            <!--id and for should be same-->
+
+            <label>Gender:</label><br><!--here don't need for-->
+            <input type="radio" id="female" name="gender" value="Female">   <!--gender=Female-->
+            <label for="female">Female</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label><br>
+
+
+            <label for="city">Enter the City:</label>
+            <select id="city" name="city">
+                <option value="TVM">Trivandrum</option>                      <!--city=TVM-->
+                <option value="Ekm">Ernakulam</option>
+                <option value="Kozhi">Kozhikode</option>
+            </select><br>
+ 
+            <!--One label for all checkboxes — wrong!
+            All have same id — wrong!-->
+            <!--<label for="hobby">Hobbies:</label><br>
+            <input type="checkbox" id="hobby" name="hobby" value="Read">Reading<br>
+            <input type="checkbox" id="hobby" name="hobby" value="Write">Writing<br>
+            <input type="checkbox" id="hobby" name="hobby" value="Sing">Singing<br>
+            <input type="checkbox" id="hobby" name="hobby" value="Dance">Dancing<br>-->
+            <!-- Heading label — no for needed here -->
+
+            <label>Hobbies:</label><br>
+            <!-- Individual label for each checkbox -->
+            <input type="checkbox" id="reading" name="hobby" value="Read">
+            <label for="reading">Reading</label><br>
+            <input type="checkbox" id="writing" name="hobby" value="Write">
+            <label for="writing">Writing</label><br>
+            <input type="checkbox" id="singing" name="hobby" value="Sing">
+            <label for="singing">Singing</label><br>
+            <input type="checkbox" id="dancing" name="hobby" value="Dance">
+            <label for="dancing">Dancing</label><br>
+            
+            <label for="mess">Enter the message:</label><br>
+            <textarea id="mess" name="message" rows="5" cols="20"></textarea><br>
+
+            <!--<input type="submit" value="Submit"><br>
+            <input type="reset" value="Reset"><br>-->
+            <!--or-->
+            <button type="submit">Submit</button><br>
+            <button type="reset">Reset</button>
+
+        </form>
+    </main>
+    <footer>
+        <p>Copyright 2026</p>
+    </footer>
+   
+</body>
+</html>
